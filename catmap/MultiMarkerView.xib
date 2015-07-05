@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lal-54-wBK">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxJ-8n-ek7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkn-gy-ZRb">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-b5-1Sc" customClass="AsyncImageView">
+                            <rect key="frame" x="62" y="52" width="476" height="495"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mHB-b5-1Sc" secondAttribute="bottom" id="5Q0-F6-HUD"/>
+                        <constraint firstItem="mHB-b5-1Sc" firstAttribute="leading" secondItem="pkn-gy-ZRb" secondAttribute="leading" id="6YT-kM-hTd"/>
+                        <constraint firstAttribute="trailing" secondItem="mHB-b5-1Sc" secondAttribute="trailing" id="O90-6I-TXB"/>
+                        <constraint firstItem="mHB-b5-1Sc" firstAttribute="top" secondItem="pkn-gy-ZRb" secondAttribute="top" id="sM7-RV-A2D"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bba-bT-hZw">
+                    <rect key="frame" x="550" y="8" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="8HY-va-WJh"/>
+                        <constraint firstAttribute="height" constant="26" id="xyT-9v-m8a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Lal-54-wBK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Anh-gS-3Z2"/>
+                <constraint firstAttribute="trailing" secondItem="pkn-gy-ZRb" secondAttribute="trailing" id="Gp9-qV-7IS"/>
+                <constraint firstItem="bba-bT-hZw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-12" id="NxM-6W-KJZ"/>
+                <constraint firstItem="Lal-54-wBK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RSU-EC-GR8"/>
+                <constraint firstItem="SxJ-8n-ek7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vhc-yu-81q"/>
+                <constraint firstAttribute="bottom" secondItem="Lal-54-wBK" secondAttribute="bottom" id="XY6-Vy-TbD"/>
+                <constraint firstItem="pkn-gy-ZRb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bm8-II-WBh"/>
+                <constraint firstAttribute="bottom" secondItem="pkn-gy-ZRb" secondAttribute="bottom" id="dqn-6m-ed4"/>
+                <constraint firstAttribute="bottom" secondItem="SxJ-8n-ek7" secondAttribute="bottom" id="dtn-8S-wv2"/>
+                <constraint firstAttribute="trailing" secondItem="bba-bT-hZw" secondAttribute="trailing" constant="-12" id="kVk-eK-Gs2"/>
+                <constraint firstAttribute="trailing" secondItem="SxJ-8n-ek7" secondAttribute="trailing" id="mRm-Im-xpw"/>
+                <constraint firstItem="pkn-gy-ZRb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y5E-IU-Dbt"/>
+                <constraint firstItem="SxJ-8n-ek7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zPI-4m-j3Q"/>
+                <constraint firstAttribute="trailing" secondItem="Lal-54-wBK" secondAttribute="trailing" id="zYg-zq-tQG"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="pkn-gy-ZRb" id="L1h-fr-9GF"/>
+                <outlet property="bgView2" destination="SxJ-8n-ek7" id="Rnz-Zz-XDJ"/>
+                <outlet property="bgView3" destination="Lal-54-wBK" id="2jA-2G-g8i"/>
+                <outlet property="countLabel" destination="bba-bT-hZw" id="zRS-oe-UT3"/>
+                <outlet property="mainImageView" destination="mHB-b5-1Sc" id="U8z-MM-NPM"/>
+            </connections>
+        </view>
+    </objects>
+</document>
