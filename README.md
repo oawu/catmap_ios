@@ -11,6 +11,8 @@
 * 練習使用基本的 TableView、MKMapView UI.. 等相關，設計出基本的應用 App。
 * Demo 網址：[http://catmap.ioa.tw/](http://catmap.ioa.tw/)
 
+![CapMap](readme_imgs/16-compressor.jpg)
+
 <br />
 ## 關於
 * 作者名稱 - [OA Wu](http://www.ioa.tw/)
