@@ -82,7 +82,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager GET:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/prev_pictures"]
+    [manager GET:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/prev_pictures"]
       parameters:data
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              if ([[responseObject objectForKey:@"status"] boolValue]) {
@@ -116,7 +116,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager GET:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/next_pictures"]
+    [manager GET:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/next_pictures"]
       parameters:data
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              if ([[responseObject objectForKey:@"status"] boolValue]) {

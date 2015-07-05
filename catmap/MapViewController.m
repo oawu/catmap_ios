@@ -56,7 +56,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager GET:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/region_pictures"]
+    [manager GET:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/region_pictures"]
       parameters:data
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              

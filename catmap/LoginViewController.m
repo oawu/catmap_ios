@@ -129,7 +129,7 @@
 - (void)initTitle {
     self.titleLabel = [UILabel new];
     [self.titleLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.titleLabel setText:@"OA's app v2.1"];
+    [self.titleLabel setText:@"CatMap"];
     [self.titleLabel setFont:[UIFont fontWithName:@"DIN Condensed" size: 50.0]];
     [self.titleLabel setTextColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:.85]];
     
@@ -573,7 +573,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager POST:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/login"]
+    [manager POST:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/login"]
        parameters:data
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               [loadingAlert dismissWithClickedButtonIndex:-1 animated:YES];

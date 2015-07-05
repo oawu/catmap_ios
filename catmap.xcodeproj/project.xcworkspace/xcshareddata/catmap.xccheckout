@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>851DC9C7-F02B-43B2-8ABD-BCC6FDC26250</string>
+	<key>IDESourceControlProjectName</key>
+	<string>catmap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>05AE07F46509B2161025509567AF27632AF8EBE8</key>
+		<string>github.com:comdan66/catmap_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>catmap.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>05AE07F46509B2161025509567AF27632AF8EBE8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:comdan66/catmap_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>05AE07F46509B2161025509567AF27632AF8EBE8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>05AE07F46509B2161025509567AF27632AF8EBE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>catmap_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

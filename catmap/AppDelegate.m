@@ -14,7 +14,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.locationManager = [CLLocationManager new];
     [self.locationManager setDelegate:self];
@@ -41,6 +40,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    [self.locationManager stopUpdatingLocation];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
@@ -50,6 +50,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [self.locationManager startUpdatingLocation];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
@@ -60,7 +61,7 @@
 }
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     self.location = [locations firstObject];
-    
+
     if (self.location != nil)
         [[CLGeocoder new] reverseGeocodeLocation:[[CLLocation alloc] initWithLatitude:self.location.coordinate.latitude longitude:self.location.coordinate.longitude]
                                completionHandler:^(NSArray *placemarks, NSError *error) {

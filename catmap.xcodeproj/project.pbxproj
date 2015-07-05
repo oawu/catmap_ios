@@ -49,6 +49,10 @@
 		0ECC5EE11B4963C600F6B9DB /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC5ED71B4963C600F6B9DB /* AFURLResponseSerialization.m */; };
 		0ECC5EE21B4963C600F6B9DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC5ED91B4963C600F6B9DB /* AFURLSessionManager.m */; };
 		0ECC5EE41B49646A00F6B9DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC5EE31B49646A00F6B9DB /* Images.xcassets */; };
+		0ECC5EE91B49688300F6B9DB /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC5EE81B49688300F6B9DB /* SettingTableViewController.m */; };
+		0ECC5EEC1B4968B900F6B9DB /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC5EEB1B4968B900F6B9DB /* AvatarViewController.m */; };
+		0ECC5EEF1B4968D000F6B9DB /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC5EEE1B4968D000F6B9DB /* NameViewController.m */; };
+		0ECC5EF21B4968E600F6B9DB /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC5EF11B4968E600F6B9DB /* PasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,14 @@
 		0ECC5ED81B4963C600F6B9DB /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		0ECC5ED91B4963C600F6B9DB /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		0ECC5EE31B49646A00F6B9DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0ECC5EE71B49688300F6B9DB /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		0ECC5EE81B49688300F6B9DB /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		0ECC5EEA1B4968B900F6B9DB /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		0ECC5EEB1B4968B900F6B9DB /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
+		0ECC5EED1B4968D000F6B9DB /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		0ECC5EEE1B4968D000F6B9DB /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		0ECC5EF01B4968E600F6B9DB /* PasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordViewController.h; sourceTree = "<group>"; };
+		0ECC5EF11B4968E600F6B9DB /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +211,7 @@
 				0ECC5E751B49609700F6B9DB /* Index */,
 				0ECC5E7E1B49611700F6B9DB /* Camera */,
 				0ECC5E821B49614800F6B9DB /* Map */,
+				0ECC5EE51B49686A00F6B9DB /* Setting */,
 				0ECC5E3B1B495E6A00F6B9DB /* catmap.xcdatamodeld */,
 				0ECC5EE31B49646A00F6B9DB /* Images.xcassets */,
 				0ECC5E341B495E6A00F6B9DB /* Supporting Files */,
@@ -451,6 +464,29 @@
 			name = AFNetworking;
 			sourceTree = "<group>";
 		};
+		0ECC5EE51B49686A00F6B9DB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC5EE61B49687200F6B9DB /* SubView */,
+				0ECC5EE71B49688300F6B9DB /* SettingTableViewController.h */,
+				0ECC5EE81B49688300F6B9DB /* SettingTableViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		0ECC5EE61B49687200F6B9DB /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				0ECC5EEA1B4968B900F6B9DB /* AvatarViewController.h */,
+				0ECC5EEB1B4968B900F6B9DB /* AvatarViewController.m */,
+				0ECC5EED1B4968D000F6B9DB /* NameViewController.h */,
+				0ECC5EEE1B4968D000F6B9DB /* NameViewController.m */,
+				0ECC5EF01B4968E600F6B9DB /* PasswordViewController.h */,
+				0ECC5EF11B4968E600F6B9DB /* PasswordViewController.m */,
+			);
+			name = SubView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -563,7 +599,9 @@
 				0ECC5EBF1B49638100F6B9DB /* RIButtonItem.m in Sources */,
 				0ECC5E811B49612900F6B9DB /* CameraViewController.m in Sources */,
 				0ECC5E781B4960AE00F6B9DB /* IndexTableViewController.m in Sources */,
+				0ECC5EE91B49688300F6B9DB /* SettingTableViewController.m in Sources */,
 				0ECC5EDF1B4963C600F6B9DB /* AFURLConnectionOperation.m in Sources */,
+				0ECC5EF21B4968E600F6B9DB /* PasswordViewController.m in Sources */,
 				0ECC5EDB1B4963C600F6B9DB /* AFHTTPRequestOperationManager.m in Sources */,
 				0ECC5E851B49615700F6B9DB /* MapViewController.m in Sources */,
 				0ECC5E951B4961F400F6B9DB /* MyTabBarController.m in Sources */,
@@ -571,6 +609,7 @@
 				0ECC5EC11B49638100F6B9DB /* UIAlertView+Blocks.m in Sources */,
 				0ECC5EC01B49638100F6B9DB /* UIActionSheet+Blocks.m in Sources */,
 				0ECC5EA41B4962A500F6B9DB /* RECluster.m in Sources */,
+				0ECC5EEF1B4968D000F6B9DB /* NameViewController.m in Sources */,
 				0ECC5EE21B4963C600F6B9DB /* AFURLSessionManager.m in Sources */,
 				0ECC5E6D1B495FD500F6B9DB /* LoginViewController.m in Sources */,
 				0ECC5EDE1B4963C600F6B9DB /* AFSecurityPolicy.m in Sources */,
@@ -580,6 +619,7 @@
 				0ECC5E911B4961C700F6B9DB /* MyNavigationController.m in Sources */,
 				0ECC5EDC1B4963C600F6B9DB /* AFHTTPSessionManager.m in Sources */,
 				0ECC5EE01B4963C600F6B9DB /* AFURLRequestSerialization.m in Sources */,
+				0ECC5EEC1B4968B900F6B9DB /* AvatarViewController.m in Sources */,
 				0ECC5EB71B49636200F6B9DB /* AsyncImageView.m in Sources */,
 				0ECC5E3A1B495E6A00F6B9DB /* AppDelegate.m in Sources */,
 				0ECC5EA71B4962A500F6B9DB /* REMarkerClusterer.m in Sources */,

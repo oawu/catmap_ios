@@ -443,7 +443,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager POST:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/create_picture"]
+    [manager POST:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/create_picture"]
        parameters:data constructingBodyWithBlock:^(id<AFMultipartFormData> formData){
            [formData appendPartWithFileData:UIImageJPEGRepresentation ([ImageUtility fixOrientation:self.pictureImageView.image], 0.1)
                                        name:@"name"
