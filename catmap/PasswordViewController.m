@@ -82,7 +82,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager POST:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/update_user_password"]
+    [manager POST:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/update_user_password"]
        parameters:data
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               [loadingAlert dismissWithClickedButtonIndex:-1 animated:YES];

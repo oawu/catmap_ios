@@ -73,7 +73,7 @@
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager.responseSerializer setAcceptableContentTypes:[NSSet setWithObject:@"application/json"]];
-    [manager POST:[NSString stringWithFormat:@"http://ios.ioa.tw/api/v1/update_user_avatar"]
+    [manager POST:[NSString stringWithFormat:@"http://catmap.ioa.tw/api/v1/update_user_avatar"]
        parameters:data constructingBodyWithBlock:^(id<AFMultipartFormData> formData){
            [formData appendPartWithFileData:UIImageJPEGRepresentation ([ImageUtility fixOrientation:self.avatarImageView.image], 0.1)
                                        name:@"avatar"
@@ -265,7 +265,7 @@
 - (void)initAlbumButton {
     self.albumButton = [UIButton new];
     [self.albumButton setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.albumButton setTitle:@"開啟相機" forState:UIControlStateNormal];
+    [self.albumButton setTitle:@"開啟相簿" forState:UIControlStateNormal];
     [self.albumButton setTitleColor:[UIColor colorWithRed:0.76 green:0.76 blue:0.76 alpha:1] forState:UIControlStateHighlighted];
     [self.albumButton setTitleColor:[UIColor colorWithRed:0.15 green:0.16 blue:0.13 alpha:.7] forState:UIControlStateNormal];
     [self.albumButton.layer setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:.3].CGColor];
