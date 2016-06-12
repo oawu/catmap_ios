@@ -446,8 +446,10 @@
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
     [self clusterize:YES];
-    [self.mapView deselectAnnotation:[self.mapView.selectedAnnotations objectAtIndex:0] animated:NO];
-    
+    NSLog (@"%@", self.mapView.selectedAnnotations);
+    if (((int)[self.mapView.selectedAnnotations count]) > 0)
+        [self.mapView deselectAnnotation:[self.mapView.selectedAnnotations objectAtIndex:0] animated:NO];
+
     if ([_delegate respondsToSelector:@selector(mapView:regionDidChangeAnimated:)])
         [_delegate mapView:mapView regionDidChangeAnimated:animated];
 }

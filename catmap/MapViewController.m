@@ -29,12 +29,12 @@
     [self.mapView setZoomEnabled:YES];
     
     AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
+//
     if ((app.location == nil) || (app.location.coordinate.latitude == 0) || (app.location.coordinate.longitude == 0))
         [self.mapView setRegion:MKCoordinateRegionMake(CLLocationCoordinate2DMake(23.80, 120.90), MKCoordinateSpanMake(4.5, 4.5)) animated:YES];
     else
         [self.mapView setRegion:MKCoordinateRegionMake(CLLocationCoordinate2DMake(app.location.coordinate.latitude, app.location.coordinate.longitude), MKCoordinateSpanMake(0.025, 0.025)) animated:YES];
-    
+//
     self.clusterer = [[REMarkerClusterer alloc] initWithMapView:self.mapView delegate:self];
     [self.clusterer setGridSize:65];
     

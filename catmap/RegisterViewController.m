@@ -897,7 +897,7 @@
           }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               [loadingAlert dismissWithClickedButtonIndex:-1 animated:YES];
-              
+              NSLog(@"%@", error);
               [[[UIAlertView alloc] initWithTitle:@"提示"
                                           message:@"連線失敗，請確認網路連線狀況後再試一次..."
                                  cancelButtonItem:[RIButtonItem itemWithLabel:@"確定" ]
